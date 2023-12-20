@@ -1,0 +1,32 @@
+[
+    {
+        "title": "Belajar baca, tulis dan hitung secara intensif untuk meningkatkan kognitif, perbendaharaan kata, konsentrasi dan logika agar anak siap masuk SD",
+        "desc": "Belajar membaca, menulis, dan berhitung (Calistung), Matematika, Bahasa Inggris, dan Sains lebih seru dengan metode Live Teaching interaktif, tersedia dalam program nasional dan internasional untuk usia 4–9 tahun",
+        "name": "Kursus online Calistung, Sains & Matematika",
+        "imageUrl": "https://cdn-web-2.ruangguru.com/landing-pages/assets/hs/00%20-%20Homepage%20Ruangguru%202022/product-list-2023/kursus-for-kids.png",
+        "videoUrl": "eubYo1i9zVg",
+        "duration": "59",
+        "price": 1000000,
+        "CategoryId": 1
+    },
+    {
+        "title": "Materi dibuat oleh pembicara asli bahasa Inggris & orang lokal sebagai penutur bahasa kedua, untuk memastikan semuanya sesuai dengan standar ujian-ujian dan kursus internasional",
+        "desc": "Tempat belajar bahasa Inggris online interaktif dengan kurikulum bersertifikat internasional serta pengajar native dan lokal yang tersertifikasi internasional",
+        "name": "Kursus bahasa Inggris bersama Native Teacher",
+        "imageUrl": "https://cdn-web-2.ruangguru.com/landing-pages/assets/hs/00%20-%20Homepage%20Ruangguru%202022/product-list-2023/ea.png",
+        "videoUrl": "xMI_LDvaW7s",
+        "duration": "130",
+        "price": 1500000,
+        "CategoryId": 1
+    },
+    {
+        "title": "Belajar Nyanyi Cicak cicak diDinding",
+        "desc": "Cicak-cicak di dinding Diam diam merayap Datang seekor nyamuk Hap ... lalu ditangkap, Cicak-cicak di dinding Diam diam merayap Datang seekor nyamuk Hap ... lalu ditangkap, Cicak-cicak di dinding Diam diam merayap Datang seekor nyamuk Hap ... lalu ditangkap, Cicak-cicak di dinding Diam diam merayap Datang seekor nyamuk Hap ... lalu ditangkap",
+        "name": "Les privat eksklusif bersama pengajar terbaik buat nyanyi ges",
+        "imageUrl": "https://cdn-web-2.ruangguru.com/landing-pages/assets/hs/00%20-%20Homepage%20Ruangguru%202022/product-list-2023/kursus-for-kids.png",
+        "videoUrl": "0eCFEYTSIAs",
+        "duration": "134",
+        "price": 1200000,
+        "CategoryId": 1
+    }
+]
