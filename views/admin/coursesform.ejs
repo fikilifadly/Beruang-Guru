@@ -1,0 +1,45 @@
+<form method="post">
+    <div class="p-5 bg-white shadow-lg flex flex-col gap-2 w-[700px]">
+        <div class="flex flex-col gap-1">
+            <label for="">Title</label>
+            <input type="text" class="border p-2 rounded-md" name="title" value="<%= data? data.title : "" %>"/>
+        </div>
+        <div class="flex flex-col gap-1">
+            <label for="">Description</label>
+            <textarea name="desc" class="border" cols="30" rows="10"><%= data ? data.desc : "" %></textarea>
+        </div>
+        <div class="flex flex-col gap-1">
+            <label for="">Image Url</label>
+            <input type="text" class="border p-2 rounded-md" name="imageUrl" value="<%= data? data.imageUrl : "" %>"/>
+        </div>
+        <div class="flex flex-col gap-1">
+            <label for="">Video Url</label>
+            <input type="text" class="border p-2 rounded-md" name="videoUrl" value="<%= data? data.videoUrl : "" %>"/>
+        </div>
+        <div class="flex flex-col gap-1">
+            <label for="">Duration</label>
+            <input type="number" class="border p-2 rounded-md" name="duration" value="<%= data? data.duration : "" %>"/>
+        </div>
+        <div class="flex flex-col gap-1">
+            <label for="">price</label>
+            <input type="number" class="border p-2 rounded-md" name="price" value="<%= data? data.price : "" %>"/>
+        </div>
+
+        <div class="flex flex-col gap-1">
+            <label for="">Category</label>
+
+            <select name="CategoryId" class="border p-2 rounded-md">
+                <% category.forEach(el => { %>
+                    <% if(data) { %>
+                        <option value="<%= el.id %>" <%= el.id === data.CategoryId ? "selected" : ""%> ><%= el.name %></option>
+                    <% } else { %>
+                        <option value="<%= el.id %>" ><%= el.name %></option>
+                    <% } %>
+                <% }) %>
+                </select>
+            </div>
+
+            
+        <input type="submit" value="Submit" class="bg-blue-500 py-2 text-white rounded-md"/>
+    </div class="p-5 bg-white shadow-lg">
+</form>

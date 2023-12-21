@@ -1,0 +1,65 @@
+<div class="relative overflow-x-auto shadow-md sm:rounded-lg p-5">
+	<form method="get">
+		<div class="my-3 flex justify-between">
+			<div class="">
+				<input type="text" name="search" placeholder="Search By Title..." class="px-3 py-2 w-[400px] border-2 rounded-md shadow-md" />
+				<input type="submit" value="Search" class="bg-[#E4A590] text-white px-3 py-2 w-[150px] rounded-full shadow-md" />
+			</div>
+
+			<form method="get">
+				<div class="flex">
+					<select name="sort" id="" class="border border-[#E4A590] px-5">
+						<option disabled>--Sort By Price--</option>
+						<option value="ASC">Price ASC</option>
+						<option value="DESC">Price DESC</option>
+					</select>
+					<input type="submit" value="Sort" class="bg-[#E4A590] text-white px-3 py-2 w-[150px] rounded-full shadow-md" />
+				</div>
+			</form>
+		</div>
+	</form>
+
+	<div class="my-3 flex"></div>
+
+	<table class="w-full text-sm text-left rtl:text-right text-gray-500 dark:text-gray-400">
+		<thead class="text-xs text-gray-700 uppercase dark:text-gray-400">
+			<tr>
+				<th class="border border-slate-600">ID</th>
+				<th class="border border-slate-600">Title</th>
+				<th class="border border-slate-600">Description</th>
+				<th class="border border-slate-600">Image</th>
+				<th class="border border-slate-600">Video</th>
+				<th class="border border-slate-600">Duration</th>
+				<th class="border border-slate-600">Price</th>
+				<th class="border border-slate-600">Category</th>
+				<th class="border border-slate-600">Action</th>
+			</tr>
+		</thead>
+
+		<tbody>
+			<% if (data.length > 0) { %> <% data.forEach((el,i) => { %>
+			<tr class="text-center p-5">
+				<td><%= i+1 %></td>
+				<td><%= el.title %></td>
+				<td><%= el.desc.slice(0, 100) %>...</td>
+				<td><img src="<%= el.imageUrl %>" alt="" class="w-[100px] h-[100px] object-cover" /></td>
+				<td><a href="youtube.com/watch?v=<%= el.videoUrl %>"><%= el.videoUrl %></a></td>
+				<td><%= el.duration %></td>
+				<td><%= el.priceValue %></td>
+				<td><%= el.Category.name %></td>
+				<td>
+					<div class="flex gap-2">
+						<a href="/admin/courses/<%= el.id %>/edit" class="px-5 py-1 border-yellow-500 text-yellow-500 border-solid border-2">Edit</a
+						><a href="/admin/courses/<%= el.id %>/delete" class="px-5 py-1 border-red-500 text-red-500 border-solid border-2">Delete</a>
+					</div>
+				</td>
+			</tr>
+			<% }) %> <% } else {%>
+
+			<tr>
+				<p>No Courses Found</p>
+			</tr>
+			<% } %>
+		</tbody>
+	</table>
+</div>

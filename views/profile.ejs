@@ -1,0 +1,33 @@
+<div class="flex flex-col gap-5 justify-center items-center h-screen pt-[100px]">
+
+<% if(message) { %>    
+    <p class="w-[700px] py-2 bg-green-500 text-white px-2 rounded-sm"><%= message %></p>
+<% } %>    
+    <form method="post">
+        <div class="p-5 bg-white shadow-lg flex flex-col gap-2 w-[700px]">
+            <div class="flex flex-col gap-1">
+                <label for="">First name</label>
+                <input type="text" class="border p-2 rounded-md" name="firstName" value="<%= data.firstName ? data.firstName : "" %>"/>
+            </div>
+            <div class="flex flex-col gap-1">
+                <label for="">Last name</label>
+                <input type="text" class="border p-2 rounded-md" name="lastName" value="<%= data.lastName ? data.lastName : "" %>"/>
+            </div>
+            <div class="flex flex-col gap-1">
+                <label for="">Gemder</label>
+
+                <select name="gender" class="border p-2 rounded-md">
+                    <option value="male" <%= data.gender ? "selected" : "" %>>Male</option>
+                    <option value="female" <%= data.gender ? "selected" : "" %>>Female</option>
+                </select>
+                </div>
+
+                <div class="flex flex-col gap-1">
+                    <label for="">First name</label>
+                    <input type="date" class="border p-2 rounded-md" name="dob" value="<%= data.dob ? data.dateValue : "" %>"/>
+                    </div>
+    
+            <input type="submit" value="Submit" class="bg-blue-500 py-2 text-white rounded-md"/>
+        </div class="p-5 bg-white shadow-lg">
+    </form>
+</div>

@@ -1,3 +1,17 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+@layer utilities {
+    .text-trans {
+        -webkit-text-stroke-width: 1px;
+    -webkit-text-stroke-color: #000;
+    color: transparent;
+    }
+    .custom-bg-text{
+        height: 60px;
+    background: linear-gradient(120deg,#A68066,#8BC34A);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+    }
+}

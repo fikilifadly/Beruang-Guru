@@ -1,18 +1,32 @@
+<!-- <div class="h-full w-full flex items-center justify-center pt-[100px]">
+	<form class="flex flex-col gap-4" method="post">
+		<input type="text" placeholder="username" name="username" />
+		<input type="email" placeholder="email" name="email" />
+		<input type="password" placeholder="password" name="password" />
+		<input type="password" placeholder="confirm password" name="" />
+		<input type="submit" value="Submit" />
+	</form>
+</div> -->
 <div class="w-full h-screen flex justify-center items-center">
 	<div class="w-full max-w-sm mx-auto overflow-hidden bg-white rounded-lg shadow-md dark:bg-gray-800">
-		<form class="flex flex-col gap-4" method="post">
+		<form class="fl ex flex-col gap-4" method="post">
 			<div class="px-6 py-4">
 				<div class="flex justify-center mx-auto">
 					<img class="w-auto h-7 sm:h-8" src="https://merakiui.com/images/logo.svg" alt="" />
 				</div>
 
-				<h3 class="mt-3 text-xl font-medium text-center text-gray-600 dark:text-gray-200">Welcome Bank</h3>
+				<h3 class="mt-3 text-xl font-medium text-center text-gray-600 dark:text-gray-200">Regist Bank</h3>
 
-				<p class="mt-1 text-center text-gray-500 dark:text-gray-400">Login</p>
-				<% if (error) { %>
-				<p class="my-3 text-red-600"><%= error %></p>
-				<% } %>
 				<form>
+					<div class="w-full mt-4">
+						<input
+							class="block w-full px-4 py-2 mt-2 text-gray-700 placeholder-gray-500 bg-white border rounded-lg dark:bg-gray-800 dark:border-gray-600 dark:placeholder-gray-400 focus:border-blue-400 dark:focus:border-blue-300 focus:ring-opacity-40 focus:outline-none focus:ring focus:ring-blue-300"
+							type="text"
+							name="username"
+							placeholder="Username"
+							aria-label="username"
+						/>
+					</div>
 					<div class="w-full mt-4">
 						<input
 							class="block w-full px-4 py-2 mt-2 text-gray-700 placeholder-gray-500 bg-white border rounded-lg dark:bg-gray-800 dark:border-gray-600 dark:placeholder-gray-400 focus:border-blue-400 dark:focus:border-blue-300 focus:ring-opacity-40 focus:outline-none focus:ring focus:ring-blue-300"

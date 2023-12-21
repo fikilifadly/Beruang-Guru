@@ -1,32 +1,143 @@
 [
     {
-        "title": "Belajar baca, tulis dan hitung secara intensif untuk meningkatkan kognitif, perbendaharaan kata, konsentrasi dan logika agar anak siap masuk SD",
-        "desc": "Belajar membaca, menulis, dan berhitung (Calistung), Matematika, Bahasa Inggris, dan Sains lebih seru dengan metode Live Teaching interaktif, tersedia dalam program nasional dan internasional untuk usia 4–9 tahun",
-        "name": "Kursus online Calistung, Sains & Matematika",
-        "imageUrl": "https://cdn-web-2.ruangguru.com/landing-pages/assets/hs/00%20-%20Homepage%20Ruangguru%202022/product-list-2023/kursus-for-kids.png",
-        "videoUrl": "eubYo1i9zVg",
-        "duration": "59",
-        "price": 1000000,
+        
+        "title" :"puluhan ribu video belajar adaptif dan latihan soal",
+        "desc":"Video belajar + UTBK skolastik Video adaptif satu-satunya di Indonesia yang bisa menyesuaikan kecepatan belajar",
+        "imageUrl":"https://cdn-web-2.ruangguru.com/landing-pages/assets/hs/00%20-%20Homepage%20Ruangguru%202022/product-list-2023/rb-favorite.png?convert=webp&h=120",
+        "videoUrl":"IMFDfx7tTMY",
+        "duration": 100,
+        "price":1800000,
+        "CategoryId" :4
+        },
+        {
+        "title":"kelas tatap muka + video belajar dan latihan belajar",
+        "desc":"Bimbel kombinasi tatap muka dan online Telah tersedia di lebih dari 200 cabang se-Indonesia dengan fasilitas kelas modern",
+        "imageUrl":"https://cdn-web-2.ruangguru.com/landing-pages/assets/hs/00%20-%20Homepage%20Ruangguru%202022/product-list-2023/bac.png?convert=webp&h=120",
+        "videoUrl":"Cbe5MD32teQ",
+        "duration": 100,
+        "price":280000,
+        "CategoryId":4
+        },
+        {
+        "title":"Live teaching interaktif + konsultasi PR",
+        "desc":"Bimbel Online Interaktif Live Teaching bersama Star Master Teacher dan konsultasi PR",
+        "imageUrl":"https://cdn-web-2.ruangguru.com/landing-pages/assets/hs/00%20-%20Homepage%20Ruangguru%202022/product-list-2023/live-teaching.png?convert=webp&h=120",
+        "videoUrl":"Vzgu0F4iwY4",
+        "duration": 100,
+        "price":354600,
+        "CategoryId":4
+        },
+        {
+        "title":"kursus bahasa inggris bersama  Native Teacher",
+        "desc":"Kursus bahasa inggris online  dan offline membantu meningkatkan keefasihan dan kepercayaan diri tempat belajar bahasa inggris online interaktif dan kurikulum bersertifikat internasional serta pengajar native dan lokal yang tersertifikasi internasional",
+        "imageUrl":"https://cdn-web-2.ruangguru.com/landing-pages/assets/hs/00%20-%20Homepage%20Ruangguru%202022/product-list-2023/ea.png?convert=webp&h=120",
+        "videoUrl": "txgg-fbVjf4",
+        "duration": 100,
+        "price": 1850000,
+        "CategoryId": 4
+        },
+        {
+        "title":"Video belajar dan latihan soal Tes Skolastik",
+        "desc":"video belajar + UTBK skolastik video adaptif satau satunya di indonesia yang dilengkapi persiapan hadapi UTBK skolastik terbaru",
+        "imageUrl":"https://cdn-web-2.ruangguru.com/landing-pages/assets/hs/00%20-%20Homepage%20Ruangguru%202022/product-list-2023/tryout-snbt.png?convert=webp&h=120",
+        "videoUrl":"7lCmzw25yRI",
+        "duration": 100,
+        "price":1870000,
+        "CategoryId":4
+        },
+        {
+        "title":"ayo belajar|asking  and giving",
+        "desc":"Proses komunikasi dasar antara individu yang melibatkan permintaan dan pemberian informasi, bantuan, atau sumber daya. Dalam interaksi sehari-hari, seseorang mungkin perlu meminta bantuan, pendapat, atau barang dari orang lain",
+        "imageUrl":"https://asset-a.grid.id/crop/0x0:0x0/x/photo/2021/08/10/contoh-dialog-asking-and-giving-20210810092555.jpg",
+        "videoUrl":"x1XhIXkNHZ8",
+        "duration": 100,
+        "price":100000,
+        "CategoryId":4
+        },
+        
+        {
+        "title":"mengidentifikasi unsur  bahasa dalam teks deskriptif",
+        "desc":"Dalam video ini, kita akan mempelajari bagaimana mengidentifikasi unsur bahasa dalam teks deskriptif bahasa Inggris. Video ini cocok untuk siswa SMP yang sedang belajar bahasa Inggris",
+        "imageUrl":"https://img.youtube.com/vi/hvylr3AWbrk/0.jpg",
+        "videoUrl":"hvylr3AWbrk&t=2s",
+        "duration": 100,
+        "price":150000,
+        "CategoryId":3
+        },
+        
+        {
+        "title":"Mengomentari Buku Cerita Malin Kundang | Bahasa Indonesia SMP",
+        "desc":"Dalam video kali ini, kita akan membahas buku cerita Malin Kundang. Kita akan membahas tentang isi cerita, pesan moral yang terkandung di dalamnya, serta pendapat kita tentang cerita tersebut. Video ini cocok untuk siswa SMP kelas 7-9 yang sedang mempelajari materi cerita rakyat Indonesia.",
+        "imageUrl":"https://img.wattpad.com/cover/341485630-256-k674103.jpg",
+        "videoUrl":"eDM1fmfTrcE&t=2s",
+        "duration": 100,
+        "price":185000,
+        "CategoryId": 3
+        },
+        {
+        "title":"Menentukan kesalahan dalam kalimat | Pasti Bisa | Bahasa Indonesia SMK",
+        "desc":"Belajar menentukan kesalahan dalam kalimat dengan mudah dan pasti bisa. Materi ini cocok untuk siswa SMK jurusan Bahasa Indonesia.",
+        "imageUrl":"https://encrypted-tbn0.gstatic.com/imageUrls?q=tbn:ANd9GcR79Zlc2ZgDwbLct2kMUrgYm2OJfttDDkwxeQ&usqp=CAU",
+        "videoUrl":"mvqjsPw9LTM",
+        "duration": 100,
+        "price":155000,
+        "CategoryId":2
+        }, 
+        {
+        "title":"Tantangan dan Serunya Menggunakan Google Slides untuk Pembelajaran PAUD",
+        "desc":"Dalam era digital saat ini, teknologi seperti Google Slides menawarkan peluang inovatif dalam mengembangkan metode pembelajaran di tingkat PAUD. Namun, seperti halnya setiap alat pendidikan, penggunaan Google Slides juga menghadirkan tantangan tersendiri. Artikel ini akan mengeksplorasi kelebihan dan potensi serunya dari Google Slides dalam konteks pembelajaran PAUD.",
+        "imageUrl":"https://www.refoindonesia.com/wp-content/uploads/2022/10/26-Okt-2022-1024x640.jpg",
+        "videoUrl":"L9KdgMCoxOo",
+        "duration": 100,
+        "price":75000,
         "CategoryId": 1
-    },
-    {
-        "title": "Materi dibuat oleh pembicara asli bahasa Inggris & orang lokal sebagai penutur bahasa kedua, untuk memastikan semuanya sesuai dengan standar ujian-ujian dan kursus internasional",
-        "desc": "Tempat belajar bahasa Inggris online interaktif dengan kurikulum bersertifikat internasional serta pengajar native dan lokal yang tersertifikasi internasional",
-        "name": "Kursus bahasa Inggris bersama Native Teacher",
-        "imageUrl": "https://cdn-web-2.ruangguru.com/landing-pages/assets/hs/00%20-%20Homepage%20Ruangguru%202022/product-list-2023/ea.png",
-        "videoUrl": "xMI_LDvaW7s",
-        "duration": "130",
-        "price": 1500000,
-        "CategoryId": 1
-    },
-    {
-        "title": "Belajar Nyanyi Cicak cicak diDinding",
-        "desc": "Cicak-cicak di dinding Diam diam merayap Datang seekor nyamuk Hap ... lalu ditangkap, Cicak-cicak di dinding Diam diam merayap Datang seekor nyamuk Hap ... lalu ditangkap, Cicak-cicak di dinding Diam diam merayap Datang seekor nyamuk Hap ... lalu ditangkap, Cicak-cicak di dinding Diam diam merayap Datang seekor nyamuk Hap ... lalu ditangkap",
-        "name": "Les privat eksklusif bersama pengajar terbaik buat nyanyi ges",
-        "imageUrl": "https://cdn-web-2.ruangguru.com/landing-pages/assets/hs/00%20-%20Homepage%20Ruangguru%202022/product-list-2023/kursus-for-kids.png",
-        "videoUrl": "0eCFEYTSIAs",
-        "duration": "134",
-        "price": 1200000,
-        "CategoryId": 1
-    }
+        },
+        {
+        "title":"My Dreams |Seg 1|Bahasa Inggris SMA",
+        "desc": "Dalam segmen ketiga ini, kita akan membahas lebih lanjut tentang mimpi-mimpi kita. Kita akan membahas tentang bagaimana cara mewujudkan mimpi kita, serta tantangan-tantangan yang mungkin kita hadapi",
+        "imageUrl":"https://www.englishbillion.com/assets/art1kel/bc7453f692824f01bf97ffc8fbed2c48.jpg",
+        "videoUrl":"NZwsLlwAW9Q",
+        "duration": 100,
+        "price":75000,
+        "CategoryId":4
+        },
+        
+        {
+        "title":"Menulis Terbatas Melengkapi Unsur Teks | SMK Bahasa Indonesia | Pasti Bisa",
+        "desc":"Dalam video ini, kita akan belajar tentang menulis terbatas, yaitu menulis dengan batasan-batasan tertentu, seperti batasan jumlah kata, batasan waktu, atau batasan tema. Salah satu jenis menulis terbatas adalah melengkapi unsur teks. Dalam materi ini, kita akan belajar tentang cara melengkapi unsur teks eksposisi, 'desc', narasi, sastra, ulasan, dan prosedur.", 
+        "imageUrl":"https://img.youtube.com/vi/3ROouN3YKvs/0.jpg",
+        "videoUrl":"3ROouN3YKvs",
+        "duration": 100,
+        "price":99000,
+        "CategoryId":2
+        },
+        
+        
+        {
+        "title":"Cerpen dalam Antologi: Menemukan tema, alur dan penokohan dalam cerpen - Bahasa Indonesia SMP",
+        "desc":"Antologi cerpen ini berisi 10 cerpen karya siswa SMP yang telah lolos seleksi dari berbagai penjuru Indonesia. Cerpen-cerpen ini bertemakan kehidupan sehari-hari, seperti keluarga, persahabatan, cinta, dan perjuangan. Melalui cerpen-cerpen ini, pembaca dapat belajar menemukan tema, alur, dan penokohan dalam cerpen.",
+        "imageUrl":"https://img.youtube.com/vi/ee0r6yRe9Xo/0.jpg",
+        "videoUrl":"ee0r6yRe9Xo",
+        "duration": 100,
+        "price":105000,
+        "CategoryId":3
+        },
+        {
+        "title":"Menulis Biografi Tokoh Pendidikan - Bahasa Indonesia SMP",
+        "desc":"Dalam mata pelajaran Bahasa Indonesia SMP, siswa akan mempelajari materi menulis biografi tokoh pendidikan. Biografi adalah riwayat hidup seseorang yang ditulis secara kronologis. Tokoh pendidikan adalah orang yang memiliki peran penting dalam dunia pendidikan.",
+        "imageUrl":"https://mmc.tirto.id/imageUrl/2022/01/05/sc-biografi-rangga-tirto.jpg",
+        "videoUrl":"jfDlHqtyeIc",
+        "duration": 100,
+        "price":102000,
+        "CategoryId":3
+        },
+        {
+        "title":"Alat Alat Reproduksi Pada Manusia - Biologi SMP",
+        "desc":"Dalam video ini, kita akan belajar tentang alat-alat reproduksi pada manusia. Alat reproduksi adalah organ-organ yang berfungsi untuk menghasilkan keturunan.",
+        "imageUrl":"https://unitedscience.files.wordpress.com/2011/12/alat-reproduksi-pria.jpg",
+        "videoUrl":"K4Rw3Xy1CH0",
+        "duration": 100,
+        "price":75000,
+        "CategoryId":1
+        }
 ]

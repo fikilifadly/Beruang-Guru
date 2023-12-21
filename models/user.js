@@ -11,6 +11,14 @@ module.exports = (sequelize, DataTypes) => {
 		static associate(models) {
 			// define association here
 			User.hasOne(models.Role);
+			User.hasOne(models.Profile, {
+				foreignKey: "UserId",
+			});
+			// User.belongsToMany(models.Course, { through: models.UserCourse });
+
+			User.hasMany(models.UserCourse, {
+				foreignKey: "UserId",
+			});
 		}
 	}
 	User.init(
@@ -19,8 +27,8 @@ module.exports = (sequelize, DataTypes) => {
 				type: DataTypes.STRING,
 				allowNull: false,
 				validate: {
-					isEmail: true,
-					notEmpty: true,
+					notNull: { msg: "Username Tidak Boleh Kosong" },
+					notEmpty: { msg: "Username Tidak Boleh Kosong" },
 				},
 			},
 			email: {
@@ -28,15 +36,19 @@ module.exports = (sequelize, DataTypes) => {
 				allowNull: false,
 				unique: true,
 				validate: {
-					isEmail: true,
-					notEmpty: true,
+					isEmail: {
+						msg: "Input harus berupa Email",
+					},
+					notNull: { msg: "Username Tidak Boleh Kosong" },
+					notEmpty: { msg: "Username Tidak Boleh Kosong" },
 				},
 			},
 			password: {
 				type: DataTypes.STRING,
 				allowNull: false,
 				validate: {
-					notEmpty: true,
+					notNull: { msg: "Username Tidak Boleh Kosong" },
+					notEmpty: { msg: "Username Tidak Boleh Kosong" },
 				},
 			},
 			RoleId: {
@@ -59,10 +71,19 @@ module.exports = (sequelize, DataTypes) => {
 		try {
 			const salt = bcrypt.genSaltSync(10);
 			const hash = bcrypt.hashSync(instance.dataValues.password, salt);
+			if (!instance.RoleId) instance.RoleId = 1;
 			instance.dataValues.password = hash;
 		} catch (error) {
 			console.log(error);
 		}
+	});
+
+	User.afterCreate(async (instance, opt) => {
+		try {
+			console.log("instance: ", instance);
+
+			await sequelize.models.Profile.create({ UserId: instance.id });
+		} catch (error) {}
 	});
 
 	return User;
