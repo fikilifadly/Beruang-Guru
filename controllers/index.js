@@ -137,22 +137,32 @@ class Controller {
 			const { userId } = req.session;
 			const { message } = req.query;
 
-			console.log(typeof userId);
-
 			const data = await Profile.findOne({
 				where: {
 					UserId: {
-						[Op.eq]: "" + userId,
+						[Op.eq]: userId,
 					},
 				},
 			});
+
+			const user = await User.findOne({
+				where: {
+					id: {
+						[Op.eq]: userId,
+					},
+				},
+				include: Course,
+			});
+
+			console.log("data: ", data, "====", "user: ", user);
 
 			res.render("layout", {
 				data,
 				body: "profile",
 				userId,
 				message,
-			});
+				user,
+		})
 		} catch (error) {
 			console.log(error);
 			// res.send(error);
@@ -169,6 +179,7 @@ class Controller {
 						[Op.eq]: userId,
 					},
 				},
+				individualHooks: true,
 			});
 
 			res.redirect("/profile?message=Success Update Profile");
@@ -180,14 +191,34 @@ class Controller {
 
 	static async profilCourse(req, res) {
 		try {
-			const data = await Course.findAll({
-				include: {
-					model: UserCourse,
+			const { userId } = req.session;
+			const { id } = req.params;
+
+			if (!userId) {
+				res.redirect("/profile?message=Login untuk enroll course");
+			}
+
+			const userCourse = await UserCourse.findOne({
+				where: {
+					UserId: {
+						[Op.eq]: userId,
+					},
+					CourseId: {
+						[Op.eq]: +id,
+					},
 				},
 			});
 
-			res.send("data MtoM: ", data);
-			// await res.render("layout", {});
+			if (!userCourse) {
+				await UserCourse.create({
+					UserId: userId,
+					CourseId: +id,
+				});
+
+				res.redirect("/profile");
+			} else {
+				res.redirect("/profile?message=anda sudah enrol materi tersebut");
+			}
 		} catch (error) {
 			console.log(error);
 			res.send(error);

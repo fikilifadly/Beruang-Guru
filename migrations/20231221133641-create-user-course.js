@@ -12,20 +12,20 @@ module.exports = {
 			UserId: {
 				type: Sequelize.INTEGER,
 				references: {
-					model: {
-						tableName: "Users",
-					},
+					model: "Users",
 					key: "id",
 				},
+				onUpdate: "cascade",
+				onDelete: "cascade",
 			},
 			CourseId: {
 				type: Sequelize.INTEGER,
 				references: {
-					model: {
-						tableName: "Users",
-					},
+					model: "Courses",
 					key: "id",
 				},
+				onUpdate: "cascade",
+				onDelete: "cascade",
 			},
 			createdAt: {
 				allowNull: false,

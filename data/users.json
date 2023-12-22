@@ -4,5 +4,11 @@
         "email": "admin@beruangguru.com",
         "password": "12345678",
         "RoleId": 2
+    },
+    {
+        "username": "member",
+        "email": "member@beruangguru.com",
+        "password": "12345678",
+        "RoleId": 1
     }
 ]

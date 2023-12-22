@@ -32,7 +32,7 @@ router.post("/register", Controller.registerProcess);
 
 router.get("/profile", profile, Controller.profile);
 router.post("/profile", profile, Controller.profileProcess);
-router.get("/profile/add/:id", profile, Controller.profilCourse);
+router.get("/profile/add/:id", Controller.profilCourse);
 
 router.get("/logout", Controller.logout);
 

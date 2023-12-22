@@ -13,10 +13,11 @@ module.exports = (sequelize, DataTypes) => {
 			// define association here
 			Course.belongsTo(models.Category);
 			// Course.belongsToMany(models.User, { through: models.UserCourse });
+			Course.belongsToMany(models.User, { through: "UserCourse", foreignKey: "CourseId" });
 
-			Course.hasMany(models.UserCourse, {
-				foreignKey: "CourseId",
-			});
+			// Course.hasMany(models.UserCourse, {
+			// 	foreignKey: "CourseId",
+			// });
 		}
 
 		get priceValue() {

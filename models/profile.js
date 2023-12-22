@@ -31,5 +31,11 @@ module.exports = (sequelize, DataTypes) => {
 			modelName: "Profile",
 		}
 	);
+
+	Profile.beforeUpdate(async (instance, opt) => {
+		if (!instance.dob) {
+			instance.dob = new Date(0);
+		}
+	});
 	return Profile;
 };
