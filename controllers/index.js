@@ -162,7 +162,7 @@ class Controller {
 				userId,
 				message,
 				user,
-		})
+			});
 		} catch (error) {
 			console.log(error);
 			// res.send(error);
